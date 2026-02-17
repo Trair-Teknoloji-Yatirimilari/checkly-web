@@ -37,9 +37,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t.legal}</h4>
             <ul className="space-y-2 text-slate-400">
-              <li><Link href="#" className="hover:text-white transition">{t.privacy}</Link></li>
-              <li><Link href="#" className="hover:text-white transition">{t.terms}</Link></li>
-              <li><Link href="#" className="hover:text-white transition">{t.kvkk}</Link></li>
+              <li><Link href={`${prefix}/privacy`} className="hover:text-white transition">{t.privacy}</Link></li>
+              <li><Link href={`${prefix}/terms`} className="hover:text-white transition">{t.terms}</Link></li>
+              {locale === 'tr' && <li><Link href="/kvkk" className="hover:text-white transition">{t.kvkk}</Link></li>}
+              <li><Link href={`${prefix}/cookies`} className="hover:text-white transition">{locale === 'tr' ? 'Çerez Politikası' : 'Cookie Policy'}</Link></li>
+              <li><Link href={`${prefix}/contact`} className="hover:text-white transition">{locale === 'tr' ? 'İletişim' : 'Contact'}</Link></li>
             </ul>
           </div>
 
