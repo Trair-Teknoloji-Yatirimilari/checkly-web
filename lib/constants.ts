@@ -1,7 +1,7 @@
 // App Store Links
 export const APP_LINKS = {
-  ios: 'https://apps.apple.com/app/checkly/id6738594424',
-  android: 'https://play.google.com/store/apps/details?id=com.trairx.checkly',
+  ios: '/coming-soon',
+  android: '/coming-soon',
   // Test Flight (Beta)
   testflight: 'https://testflight.apple.com/join/XXXXXXXX'
 } as const;
