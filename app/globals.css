@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgb(255 255 255 / 0.05);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgb(255 255 255 / 0.1);
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to right, rgb(96 165 250), rgb(192 132 252), rgb(244 114 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
