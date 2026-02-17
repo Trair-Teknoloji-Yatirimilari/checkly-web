@@ -10,11 +10,16 @@ export const metadata: Metadata = {
   title: "Checkly - Yapay Zekâ Destekli Konum Tabanlı Sosyal Keşif",
   description: "Etrafında kim var? Şehirde ne oluyor? Gerçek zamanlı check-in ve yapay zekâ destekli keşif deneyimi.",
   keywords: ["checkly", "sosyal keşif", "yapay zeka", "konum tabanlı", "check-in", "gerçek zamanlı"],
+  icons: {
+    icon: '/favicon.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: "Checkly - Yapay Zekâ Destekli Konum Tabanlı Sosyal Keşif",
     description: "Gerçek zamanlı check-in ve yapay zekâ destekli keşif deneyimi.",
     type: "website",
     locale: "tr_TR",
+    images: ['/logo.png'],
   },
 };
 

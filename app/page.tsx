@@ -204,6 +204,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Screenshots Gallery */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Uygulamayı Keşfet</h2>
+            <p className="text-xl text-slate-300">
+              Checkly ile şehri yeniden deneyimle
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[1, 2, 3, 4].map((num) => (
+              <div key={num} className="group relative overflow-hidden rounded-2xl">
+                <img 
+                  src={`/screenshot${num}.png`} 
+                  alt={`Checkly Screenshot ${num}`}
+                  className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600/20 to-purple-600/20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
